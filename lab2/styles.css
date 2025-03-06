@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aqua;
+
+}
+nav{
+    font-size: 30;
+    background-color: coral;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+nav span{
+    margin: 30px;
+}
+
+h1,h2{
+padding-bottom: 20px ;
+}
+h1{
+    position: relative;
+}
+
+h3{
+    padding-bottom: 10px;
+}
+
+p{
+    font-size: large;
+}
+
+.report{
+font-size: large;
+font-weight: bold;
+padding-bottom: 10px;
+}
+
+#Introduction{
+
+margin-left: 30px;
+}
+
+#webdevelopment
+{
+   margin-left: 30px;
+}
+
+#report{
+    margin-left: 30px;
+}
+
+#footer{
+    margin-top: 20px;
+    padding: 10px;
+    color: white;
+    background-color: cadetblue;
+    text-align: center;
+}
+img{
+    border-radius: 10cm;
+    position: relative;
+    margin-left: 500px;
+}
+
+ul,ol{
+    font-size: large;
+}
