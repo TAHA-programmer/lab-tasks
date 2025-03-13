@@ -1,0 +1,78 @@
+:root{
+    --body-back-color: #ffe3d8;
+    --font-fam: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    font-size: 40px;
+    padding-left: 500px;
+    border: 3px solid blue;
+    background-color: var(--body-back-color);
+    border-radius: 20px;
+    font-family: var(--font-fam);
+}
+p{
+    font-family: var(--font-fam);
+}
+ nav{
+    margin-bottom: 20px;
+
+}
+
+body{
+    background-color : #e3b6be;
+}
+.header img{
+    border-radius: 200px;
+}
+a:hover{
+    color: aqua;
+}
+p:first-letter{
+    font-family: 'Times New Roman', Times, serif;
+}
+.class1 h1{
+    text-transform: capitalize;
+    font-size: xx-large;
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+.class1 img{
+    width: 500px;
+    height: 300px;
+    position: relative;
+}
+.profilecard{
+    border: 2px solid black;
+    box-sizing: border-box; 
+    width: 700px;
+    height: 613px;
+    border-radius: 30px;
+    margin-left: 200px;
+    background-color: var(--body-back-color);
+    box-shadow: 2px 2px 2px 4px #743374;
+}
+.profilecard img{
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+}
+#footer{
+    margin-top: 20px;
+    padding: 10px;
+    color: black;
+    background-color: var(--body-back-color);
+    text-align: center;
+}
+.class1 ul{
+    font-size: large;
+}
+h3 + p{
+    display: inline;
+    font-size: large;
+}
+h3 p{
+    letter-spacing: normal;
+    word-spacing: normal;
+}
