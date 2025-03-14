@@ -1,5 +1,5 @@
 :root{
-    --body-back-color: #ffe3d8;
+    --body-back-color: #c48cb3;
     --font-fam: Arial, Helvetica, sans-serif;
 }
 
@@ -11,18 +11,29 @@
     border-radius: 20px;
     font-family: var(--font-fam);
 }
+.header p{
+    margin-top: -5px;
+    margin-left: -50px;
+}
 p{
     font-family: var(--font-fam);
 }
  nav{
+    text-align: right;
+    margin-right: 15px;
     margin-bottom: 20px;
 
 }
+nav span{
+    display: inline-block;
+    margin-left: 20px;
+}
 
 body{
-    background-color : #e3b6be;
+    background-color : #e5c9d7;
 }
 .header img{
+    margin-top: 5px;
     border-radius: 200px;
 }
 a:hover{
@@ -42,6 +53,8 @@ p:first-letter{
     width: 500px;
     height: 300px;
     position: relative;
+    border: 2px solid aqua;
+    box-shadow: 2px 2px 2px 3px #743374;
 }
 .profilecard{
     border: 2px solid black;
@@ -71,8 +84,6 @@ p:first-letter{
 h3 + p{
     display: inline;
     font-size: large;
-}
-h3 p{
     letter-spacing: normal;
     word-spacing: normal;
 }
