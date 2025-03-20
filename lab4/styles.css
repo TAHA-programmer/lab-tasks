@@ -116,14 +116,14 @@ h2{
 }
 
 #form{
-    padding-left: 350px;
+    padding-left: 390px;
     padding-right: 100px;
     padding-top: 30px;
     padding-bottom: 20px;
 }
 fieldset{
     background-color: yellow;
-    margin-right: 450px;
+    margin-right: 410px;
     border-radius: 5px;
 }
 
@@ -158,7 +158,7 @@ input[type="radio"]{
 #submitbtn{
     margin-left: 3px;
     font-family: var(--font-fam1);
-    padding: 10px 200px;
+    padding: 10px 130px;
     font-weight: bold;
     font-size: 1.5em;
     border-radius: 5px;
