@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lab Task 4</title>
+</head>
+<body>
+    <header class="header">
+        <img id="headerimg" src="logo.jpg" alt="image not displayed" width="150px" height="150px">
+        <div>Record Section</div>
+        <nav>
+            <ul>
+                <li><a href="#tablesec">Table</a></li>
+                <li><a href="#form">Form</a></li>
+                <li><a href="#reportsec">Report</a></li>
+            </ul>
+        </nav>
+        </header>
+
+    <section id="tablesec">
+        <h2>table</h2>
+        <table>
+            <caption>GradeSheet of students</caption>
+            <thead><th colspan="5">GradeSheet</th></thead>
+            <tfoot><td colspan="5">Total Students:10</td></tfoot>
+            <tbody>
+                <tr class="head">
+                    <th>Sr.</th>
+                    <th>Reg No.</th>
+                    <th>Name</th>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>04072213028</td>
+                    <td>Taha Fayyaz</td>
+                    <td>WAD Lab</td>
+                    <td>90</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>04072213029</td>
+                    <td>Wajeeha Kamran</td>
+                    <td>WAD Lab</td>
+                    <td>91</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>04072213025</td>
+                    <td>Ibrahim</td>
+                    <td>WAD Lab</td>
+                    <td>92</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>04072213023</td>
+                    <td>Hamad</td>
+                    <td>WAD Lab</td>
+                    <td>90</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>04072213020</td>
+                    <td>Tanveer Atta</td>
+                    <td>WAD Lab</td>
+                    <td>80</td>
+                </tr>
+
+                <tr>
+                    <td>6</td>
+                    <td>04072213047</td>
+                    <td>Faheem Khan</td>
+                    <td>WAD Lab</td>
+                    <td>80</td>
+                </tr>
+
+                <tr>
+                    <td>7</td>
+                    <td>04072213004</td>
+                    <td>Ghufran</td>
+                    <td>WAD Lab</td>
+                    <td>92</td>
+                </tr>
+
+                <tr>
+                    <td>8</td>
+                    <td>04072213030</td>
+                    <td>Ehtisham</td>
+                    <td>WAD Lab</td>
+                    <td>70</td>
+                </tr>
+
+                <tr>
+                    <td>9</td>
+                    <td>04072213032</td>
+                    <td>Abdur Rehman</td>
+                    <td>WAD Lab</td>
+                    <td>95</td>
+                </tr>
+
+                <tr>
+                    <td>10</td>
+                    <td>04072213022</td>
+                    <td>Hussain Ali</td>
+                    <td>WAD Lab</td>
+                    <td>95</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <h2>Form</h3>
+    <section id="form">
+        <form method="post" action="#">
+            <fieldset>
+                <legend>Record of a Student</legend>
+                <div id="namediv">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="enter your name">
+                </div>
+
+                <div id="regdiv">
+                    <label for="reg_no">Reg No:</label>
+                    <input type="number" id="reg_no" placeholder="enter your registration no">
+                </div>
+
+                <div id="countrydiv">
+                    <label for="country">Country:</label>
+                    <select name="where" id="country">
+
+                        <optgroup label="America">
+                            <option value="US" selected>United States</option>
+                            <option value="max">Mexico</option>
+                            <option value="ca">Canada</option>
+                        </optgroup>
+
+                        <optgroup label="Asia">
+                            <option value="chn">China</option>
+                            <option value="jp">Japan</option>
+                            <option value="pak">Pakistan</option>
+                            <option value="in">India</option>
+                            <option value="nk">North Korea</option>
+                        </optgroup>
+
+                        <optgroup label="Africa">
+                            <option value="nag">Nigeria</option>
+                            <option value="eg">Egypt</option>
+                            <option value="sa">South Africa</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div id="teldiv">
+                    <label for="telnumber">Contact no:</label>
+                    <input type="number" id="telnumber" placeholder="enter your contact no">
+                </div>
+
+                <div id="emaildiv">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="enter your email">  
+                </div>
+
+                <div id="genderdiv">
+                    <label for="gender">Gender:</label>
+                    <input type="radio" name="gender" id="1">Male 
+                    <input type="radio" name="gender" id="2">Female <br>
+                </div>
+
+                <div id="DOBdiv">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date"  id="dob">
+                </div>
+
+                <div id="submitdiv">
+                    <input type="submit" name="Submitted" id="submitbtn">
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+    <section id="reportsec">
+        <div>
+            <h2>report</h2>
+            <br>
+            <small id="stylereport" style="text-indent: 10px; display: flex;">
+                I have used a header tag for using logo and my website name. then i make table which has 5 columns and 
+                10 rows, table includes th, tr, td tags with semantic tags of thead, caption, tbody, tfooter. I 
+                made a form for entering student records. It includes 5 labels, which are used for entering name, 
+                registration number as number field, country as a drop down list, contact number as number field, 
+                email as email field gender as radio buttons and submit button for submitting the form, I have
+                used different semantic tags such as fieldset, legend. The last part includes footer which has copyright Reserved things. i have applied css styles on header such
+                as background color, border, border radius, box shadow. I have applied styles on table such as applying
+                margins, borders, background colors, hover affect whenever you place mouse on any data part of the table,
+                border-collapsing. I have applied styles in forms such as applying background color, changing font family,
+                font size, providing border radius for submit button. I have applied styles on footer such as background 
+                color changing. I have used these tags and styles because they are easy to use and i have some expertise 
+                in them. 
+            </small>
+        </div>
+    </section>
+   
+    <section id="footer">
+        <div> 
+            <footer><p>2025 TAHA FAYYAZ Website | All Rights Reserved</p>
+        </footer>
+    </div>
+    </section>
+</body>
+</html>
