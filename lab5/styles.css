@@ -1,0 +1,178 @@
+:root{
+    --font-fam1:'Times New Roman', Times, serif;
+    --font-fam2:Arial, Helvetica, sans-serif;
+    --back-color: #f5f5dc;
+}
+#container{
+    display: grid;
+    grid-template-areas:
+    "H H"
+    "N N"
+    "S M"
+    "F F"
+    ;
+    grid-template-columns: 1.5fr 3.5fr;
+    grid-template-rows: 0.5fr 0.5fr 3.5fr 0.2fr;
+    background-color: var(--back-color);
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+.box{
+    background-color: var(--back-color);
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header{
+    grid-area: H;
+    border-radius: 5px;
+    font-size: 1.5em;
+    border: 2px solid #dca806;
+    display: flex;
+    margin-bottom: 3px;
+    align-items: center;
+}
+#header div{
+    margin-left: 20px;
+    font-weight: bold;
+    border: 2 px solid black;
+    border-radius: 5px;
+}
+#headerimg{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    border-radius: 60px;
+}
+
+#navigation{
+    border-radius: 5px;
+    grid-area: N;
+    margin-bottom: 7px;
+    font-size: large;
+    border: 2px solid #dca806;
+    
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px; 
+}
+a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 10px;
+    background-color: #dca806; 
+    border-radius: 5px; 
+}
+
+a:hover {
+    background-color: #a87404;
+}
+
+#side{
+    grid-area: S;
+    border-radius: 5px;
+    border: 2px solid #dca806;
+    padding-left: 7px;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 3px;
+}
+#profilecard{
+    margin-top: 10px;
+    border: 2px solid black;
+    display: flex;
+    box-sizing: border-box; 
+    width: 350px;
+    height: 200px;
+    border-radius: 30px;
+    background-color: var(back-color);
+    box-shadow: 2px 2px 2px 4px #743374;
+    font-size: small;
+}
+#profilecardbio{
+    margin-left: 15px;
+    font-family: var(--font-fam1);
+    font-size: medium;
+}
+#profilecardpic img{
+    
+    width: 100px;
+    border-radius: 50%;
+}
+#cardcaption{
+    padding-bottom: 8px;
+    font-weight: bold;
+    margin-left: 7px;
+}
+#carda{
+    margin-right: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 10px;
+    background-color: #dca806; 
+    border-radius: 5px; 
+}
+
+
+#main{
+    grid-area: M;
+    border: 2px solid #dca806;
+    margin-left: 5px;
+    margin-bottom: 4px;
+    border-radius: 5px;
+}
+.article h1{
+    margin-left: 4px;
+    text-transform: capitalize;
+    font-size: xx-large;
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: var(--font-fam1)
+}
+
+.article img{
+    width: 500px;
+    position: relative;
+    border: 2px solid aqua;
+    box-shadow: 2px 2px 2px 3px #743374;
+}
+
+h3{
+    display: inline;
+    margin-left: 4px;
+}
+#firstP{
+    margin-top: 4px;
+    margin-left: 4px;
+}
+#secondP{
+    font-size: large;
+    margin-left: 4px;
+}
+
+#footer{
+    grid-area: F;
+}
+#footer{
+    border-radius:5px ;
+    font-family: var(--font-fam1);
+    margin-top: 2px;
+    padding: 10px;
+    color: black;
+    background-color: #dca806;
+    text-align: center;
+}
