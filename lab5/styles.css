@@ -3,19 +3,73 @@
     --font-fam2:Arial, Helvetica, sans-serif;
     --back-color: #f5f5dc;
 }
+
+@media (max-width:400px)
+{
+#container{
+    display: grid;
+    grid-template-areas: 
+    "H"
+    "N"
+    "S"
+    "M"
+    "F"
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows:  0.1fr 0.1fr 0.8fr 2fr  0.2fr;
+    background-color: var(--back-color);
+    height: 100%;
+}
+
+#adsnav{
+    display: none !important;
+}
+#ads{
+    display: none !important;
+}
+
+}
+
+@media (min-width:401px) and (max-width:800px)
+{
+    #container{
+        display: grid;
+        grid-template-areas: 
+        "H H"
+        "N N"
+        "S M"
+        "F F"
+        ;
+        grid-template-columns: 0.2fr 0.8fr;
+        grid-template-rows:  0.1fr 0.1fr 0.6r 0.2fr;
+        background-color: var(--back-color);
+        height: 100%;
+    }
+    #adsnav{
+        display: none !important;
+    }
+    #ads{
+        display: none !important;
+    }
+
+}
+
+@media (min-width:600px){
 #container{
     display: grid;
     grid-template-areas:
-    "H H"
-    "N N"
-    "S M"
-    "F F"
+    "H H H"
+    "N N N"
+    "S M A"
+    "F F F"
     ;
-    grid-template-columns: 1.5fr 3.5fr;
+    grid-template-columns: 2fr 3.5fr 0.8fr;
     grid-template-rows: 0.5fr 0.5fr 3.5fr 0.2fr;
     background-color: var(--back-color);
     height: 100%;
 }
+}
+
 body{
     height: 100%;
 }
@@ -84,7 +138,7 @@ a:hover {
     grid-area: S;
     border-radius: 5px;
     border: 2px solid #dca806;
-    padding-left: 7px;
+    justify-content: space-around;
     justify-items: center;
     align-items: center;
     display: flex;
@@ -162,6 +216,43 @@ h3{
 #secondP{
     font-size: large;
     margin-left: 4px;
+}
+
+#ads{
+    background-color:#dca806;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    grid-area: A;
+    margin-left: 5px;
+    margin-bottom: 4px;
+    border-radius: 5px;
+    border: 2px solid #dca806;
+}
+#addimg1{
+    width: 120px;
+    border-radius: 4px;
+}
+#addimg2{
+    margin-top: 50px;
+    width: 120px;
+    border-radius:4px ;
+}
+#addimg3{
+    margin-top: 50px;
+    width: 120px;
+    border-radius: 4px;
+}
+#addimg4{
+    margin-top: 50px;
+    width: 120px;
+    border-radius: 4px;
+}
+#addimg5{
+    margin-top: 50px;
+    width: 120px;
+    border-radius: 4px;
 }
 
 #footer{
