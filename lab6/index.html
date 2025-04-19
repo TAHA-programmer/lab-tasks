@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Index Page</title>
+</head>
+<body>
+    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-[#f5f5dc]">
+    
+        <div id="home" class=" col-span-full border-1 border-[#dca806] rounded flex items-center justify-center ml-2 mr-2">
+            <img class="border-1 rounded-full w-[120px] mt-2 mb-2" src="logo.jpg" alt="logo not found">
+            <p class="ml-2 text-xl font-bold font-serif">Global News</p>
+        </div>
+
+        <div class="col-span-full border-1 border-[#dca806] rounded ml-2 mr-2 mt-2 py-1 text-xl font-serif">
+            <nav class="flex justify-end mr-4">
+                <ul class="flex list-none gap-6">
+                    <li class="hover:scale-120"><a class="font-bold hover:text-gray-500" href="#home">Home</a></li>
+                    <li class="hover:scale-120"><a class="font-bold hover:text-gray-500" href="#profilecard">Profile Card</a></li>
+                    <li class="hover:scale-120"><a class="font-bold hover:text-gray-500" href="#article">Article</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="profilecard" class="sm:col-span-full md:col-span-1 lg:col-span-1 lg:w-[420px] border-1 border-[#dca806] rounded ml-2 mr-2 mt-2 flex items-center justify-center">
+            <div class="border-2 border-gray-500 rounded shadow-sm shadow-black flex items-center justify-between lg:w-[410px] lg:h-[200px] my-2">
+                <div class="pl-2 font-serif">
+                    <p>A computer science student willing to achieve skills in web development, having expertise in app development, c++.</p>
+                    <p class="font-semibold">I have no followers yet</p>
+                </div>
+
+                <div class="font-serif">
+                    <figure class="mb-2">
+                        <img class="rounded-full w-[200px] pr-2" src="myimage.jpg" alt="picture not found">
+                        <figcaption>Taha Fayyaz</figcaption>
+                    </figure>
+                    <div class="hover:scale-110 hover:text-gray-500 text-xs">
+                    <a class="border-2 border-gray-700 rounded  px-1 py-1" href="https://www.linkedin.com/in/taha-fayyaz-077235286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Contact me</a>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="article" class="sm:col-span-full md:col-span-1 lg:col-span-1 lg:w-[660px] border-1 border-[#dca806] rounded ml-4 mr-2 mt-2 font-serif">
+            <article class="pl-2">
+                <h1 class="font-extrabold text-3xl underline">Balochistan standoff ends after all Jaffar Express hostages rescued</h1>
+               
+                <div class="flex items-center">
+                <figure>
+                    <img class="w-[300px] mb-2 border-1 border-gray-500 rounded shadow-md shadow-gray-500" src="articleImg.jpg" alt="picture not found">
+                    <figcaption class="text-xs">Security personnel and volunteers help to transport an injured train passenger following an operation against terrorists who ambushed the train in the remote mountainous area in Mach, Balochistan on March 12, 2025. — AFP</figcaption>
+                </figure>
+
+                <ul class="pr-4">
+                    <li class="list-disc pb-1 leading-6"> Military spokesperson says 33 terrorists killed; four FC men martyred; clearance operation underway</li>
+                    <li class="list-disc pb-1 leading-6">Says snipers took out suicide bombers guarding hostages, who then fled to safety</li>
+                    <li class="list-disc pb-1 leading-6">Claims terrorists were in touch with ‘handlers in Afghanistan’ via satellite phones</li>
+                </ul>
+            </div>
+
+            <h3 class="mt-2 text-lg font-semibold">ISLAMABAD / QUETTA:</h3>
+            <p class="text-[16px] pr-2">After a dramatic showdown with terrorists who had hijacked the Jaffar Express and taken hundreds of passengers hostage, the military announced the conclusion of its rescue operation on Wednesday night.</p>
+            <p class="text-[16px] pt-2 pr-2">In separate statements, Inter-Services Public Relations (ISPR) Director General Lt Gen Ahmed Sharif Chaudhry and Information Minister Atta Tarar announced the successful completion of the operation and the recovery of all hostages.</p>
+            <div class="text-center mb-2">
+            <time datetime="4/18/2025">4/18/2025</time>
+        </div>
+            </article>
+        </div>
+
+        <div class="hidden lg:col-span-1 lg:w-[145px] lg:flex flex-col items-center justify-around border-1 border-[#dca806] rounded ml-66 mr-2 mt-2">
+            <figure>
+                <img class="lg:w-[100px] border-1 border-gray-600 rounded ml-4 mb-4" src="addImg1.jpg" alt="picture not found">
+                <img class="lg:w-[100px] border-1 border-gray-600 rounded ml-4 mb-4" src="addImg2.webp" alt="picture not found">
+                <img class="lg:w-[100px] border-1 border-gray-600 rounded ml-4 mb-4" src="addImg3.jpg" alt="picture not found">
+                <img class="lg:w-[100px] border-1 border-gray-600 rounded ml-4 mb-4" src="addImg4.jpg" alt="picture not found">
+                <img class="lg:w-[100px] border-1 border-gray-600 rounded ml-4 mb-4" src="addImg5.webp" alt="picture not found">
+
+            </figure>
+        </div>
+
+        <div class="col-span-full border-1 border-[#dca806] rounded ml-2 mr-2 mt-2 font-serif bg-gray-500">
+            <footer class="px-2 py-1 text-center"><p>2025 TAHA FAYYAZ Website | All Rights Reserved</p>
+        </div>
+    </div>
+</body>
+</html>
